@@ -41,8 +41,6 @@ $(document).ready(function () {
             noMoveStart: false
         });
 
-    });
-
     function popUp(f, l) {
         var out = [];
         if (f.properties) {
