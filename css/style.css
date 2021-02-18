@@ -7,3 +7,25 @@ body {
     height: 100vh;
     width: 100vw;
 }
+
+.popupCustom {
+    max-width: 300px;
+    padding: 10px;
+    font-family: Verdana;
+    font-size: 0.75rem;
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+    background-color: #fbffc0;
+}
+
+.leaflet-container a.leaflet-popup-close-button {
+    top: 10px;
+    right: 10px;
+    color: #000000;
+}
+
+.leaflet-container a.leaflet-popup-close-button:hover {
+    color: #ff0000;
+}
