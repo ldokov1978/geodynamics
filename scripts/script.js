@@ -40,7 +40,7 @@ $(document).ready(function () {
             easeLinearity: 0.25,
             noMoveStart: false
         });
-    }
+    });
                
     function popUp(f, l) {
         var out = [];
