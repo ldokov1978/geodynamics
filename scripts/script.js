@@ -13,7 +13,7 @@ $(document).ready(function () {
         attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
     }).addTo(map);
 
-    let volcano = new L.GeoJSON.AJAX(['/json/volcano.geojson'],{onEachFeature:popUp}).addTo(map);
+    let volcano = new L.GeoJSON.AJAX(['json/volcano.geojson'],{onEachFeature:popUp}).addTo(map);
 
     volcano.on('click', function(e){
         map.setView([e.latlng.lat, e.latlng.lng], 4);
