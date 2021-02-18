@@ -39,8 +39,8 @@ $(document).ready(function () {
             duration: 10000,
             easeLinearity: 0.25,
             noMoveStart: false
-        });
-    });
+        })
+    })
                
     function popUp(f, l) {
         var out = [];
