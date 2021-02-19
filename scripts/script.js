@@ -18,13 +18,13 @@ $(document).ready(function () {
     }).addTo(map);
 
     var volcanoIcon = L.icon({
-        iconUrl: '../images/volcano-icon.png',
+        iconUrl: './images/volcano-icon.png',
         iconSize: [50, 50],
         iconAnchor: [25, 45],
         popupAnchor: [0, -40],
     });
 
-    var volcano = new L.GeoJSON.AJAX(['../json/volcano.geojson'], {
+    var volcano = new L.GeoJSON.AJAX(['./json/volcano.geojson'], {
         pointToLayer: function (geoJsonPoint, latlng) {
             return L.marker(latlng, {icon: volcanoIcon});
         },
