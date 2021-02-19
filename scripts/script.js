@@ -17,6 +17,8 @@ $(document).ready(function () {
         attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
     }).addTo(map);
 
+    var volcanoGeoJSON = './json/volcano.geojson';
+
     var volcanoIcon = L.icon({
         iconUrl: './images/volcano-icon.png',
         iconSize: [50, 50],
@@ -24,14 +26,12 @@ $(document).ready(function () {
         popupAnchor: [0, -40],
     });
 
-    var volcano = new L.GeoJSON.AJAX(['./json/volcano.geojson'], {
+    var volcano = new L.GeoJSON.AJAX([volcanoGeoJSON], {
         pointToLayer: function (geoJsonPoint, latlng) {
-            return L.marker(latlng, {icon: volcanoIcon});
+            return L.marker(latlng, { icon: volcanoIcon });
         },
         onEachFeature: popUp
-    });
-
-    volcano.addTo(map);
+    }).addTo(map);
 
     volcano.on('click', function (e) {
         map.setView([e.latlng.lat, e.latlng.lng], 10, {
@@ -40,38 +40,46 @@ $(document).ready(function () {
             easeLinearity: 0.25,
             noMoveStart: false
         })
-    })
-               
+    });
+
+
+
+    // === Функции ===
+
     function popUp(f, l) {
         var out = [];
         if (f.properties) {
             for (key in f.properties) {
                 let alias;
                 switch (key) {
-                    case 'volcanoName':
+                    case 'FID':
+                        alias = '#';
+                        break;
+                    case 'volcanoNam':
                         alias = 'Название вулкана';
-                    break;
+                        break;
                     case 'country':
                         alias = 'Страна';
-                    break;
+                        break;
                     case 'type':
                         alias = 'Тип вулкана';
-                    break;
+                        break;
                     case 'latitude':
                         alias = 'Широта';
-                    break;
+                        break;
                     case 'longitude':
                         alias = 'Долгота';
-                    break;
+                        break;
                     case 'elevation':
                         alias = 'Высота (м)';
-                    break;
-                };                    
+                        break;
+                };
                 out.push(alias + ": " + f.properties[key]);
             }
             l.bindPopup(out.join("<br />"), {
-                'className' : 'popupCustom'
+                'className': 'popupCustom'
             });
         }
-    }
+    };
+
 });
