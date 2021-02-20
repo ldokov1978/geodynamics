@@ -35,23 +35,24 @@ $(document).ready(function () {
 
     const volcano = new L.GeoJSON.AJAX([volcanoGeoJSON], {
         pointToLayer: function (geoJsonPoint, latlng) {
-            return L.marker(latlng, { icon: volcanoIcon });
+            return L.marker(latlng, {
+                icon: volcanoIcon,
+                tooltip: {
+                    html: geoJsonPoint.properties.volcanoNam
+                }
+            });
         },
         onEachFeature: popUp
     }).addTo(map);
 
     volcano.on('click', function (e) {
-        map.setView([e.latlng.lat, e.latlng.lng], 10)
+        map.setView([e.latlng.lat, e.latlng.lng], 10);
+        setTimeout(function () {
+            $('.leaflet-popup-close-button').on('click', () => {
+                map.setView([0, 0], 2);
+            });
+        }, 50);
     });
-
-    // .on('click', function (e) {
-    //     // map.setView([0, 0], 2);
-    //     console.log (e);
-    // });
-
-    // volcano.on('mouseover', function (e) {
-    //     console.log (e);
-    // });
 
     // === Functions ===
 
