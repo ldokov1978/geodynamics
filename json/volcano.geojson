@@ -94,7 +94,7 @@
       "properties" : {
         "FID" : 4,
         "volcanoNam" : "Adams",
-        "country" : "USA",
+        "country" : "United States",
         "type" : "Stratovolcano",
         "latitude" : 46.210000000000001,
         "longitude" : -121.48999999999999,
@@ -454,7 +454,7 @@
       "properties" : {
         "FID" : 22,
         "volcanoNam" : "Akutan",
-        "country" : "USA",
+        "country" : "United States",
         "type" : "Stratovolcano",
         "latitude" : 54.130000000000003,
         "longitude" : -165.99000000000001,
@@ -694,7 +694,7 @@
       "properties" : {
         "FID" : 34,
         "volcanoNam" : "Aniakchak",
-        "country" : "USA",
+        "country" : "United States",
         "type" : "Caldera",
         "latitude" : 56.880000000000003,
         "longitude" : -158.16999999999999,
@@ -934,7 +934,7 @@
       "properties" : {
         "FID" : 46,
         "volcanoNam" : "Atka",
-        "country" : "USA",
+        "country" : "United States",
         "type" : "Caldera",
         "latitude" : 52.380000000000003,
         "longitude" : -174.15000000000001,
@@ -974,7 +974,7 @@
       "properties" : {
         "FID" : 48,
         "volcanoNam" : "Augustine",
-        "country" : "USA",
+        "country" : "United States",
         "type" : "Dome",
         "latitude" : 59.359999999999999,
         "longitude" : -153.43000000000001,
@@ -1134,7 +1134,7 @@
       "properties" : {
         "FID" : 56,
         "volcanoNam" : "Bachelor",
-        "country" : "USA",
+        "country" : "United States",
         "type" : "Stratovolcano",
         "latitude" : 43.799999999999997,
         "longitude" : 121.59999999999999,
@@ -1174,7 +1174,7 @@
       "properties" : {
         "FID" : 58,
         "volcanoNam" : "Baker",
-        "country" : "USA",
+        "country" : "United States",
         "type" : "Stratovolcano",
         "latitude" : 48.789999999999999,
         "longitude" : -121.81999999999999,
@@ -1334,7 +1334,7 @@
       "properties" : {
         "FID" : 66,
         "volcanoNam" : "Belknap",
-        "country" : "USA",
+        "country" : "United States",
         "type" : "Shield",
         "latitude" : 44.280000000000001,
         "longitude" : -121.83,
@@ -1514,7 +1514,7 @@
       "properties" : {
         "FID" : 75,
         "volcanoNam" : "Capulin",
-        "country" : "USA",
+        "country" : "United States",
         "type" : "Cinder Cone",
         "latitude" : 36.450000000000003,
         "longitude" : -104.09,
@@ -1534,7 +1534,7 @@
       "properties" : {
         "FID" : 76,
         "volcanoNam" : "Carrizozo",
-        "country" : "USA",
+        "country" : "United States",
         "type" : "Volcanic Field",
         "latitude" : 33.700000000000003,
         "longitude" : -106,
@@ -1614,7 +1614,7 @@
       "properties" : {
         "FID" : 80,
         "volcanoNam" : "Chiginagak",
-        "country" : "USA",
+        "country" : "United States",
         "type" : "Stratovolcano",
         "latitude" : 57.130000000000003,
         "longitude" : -156.99000000000001,
@@ -1674,7 +1674,7 @@
       "properties" : {
         "FID" : 83,
         "volcanoNam" : "Cleveland",
-        "country" : "USA",
+        "country" : "United States",
         "type" : "Stratovolcano",
         "latitude" : 52.829999999999998,
         "longitude" : -169.94999999999999,
@@ -1734,7 +1734,7 @@
       "properties" : {
         "FID" : 86,
         "volcanoNam" : "Columbia River Flood Basalts",
-        "country" : "USA",
+        "country" : "United States",
         "type" : "Flood Basalt",
         "latitude" : 50.216000000000001,
         "longitude" : -115.84999999999999,
@@ -1834,7 +1834,7 @@
       "properties" : {
         "FID" : 91,
         "volcanoNam" : "Crater Lake",
-        "country" : "USA",
+        "country" : "United States",
         "type" : "Caldera",
         "latitude" : 42.939999999999998,
         "longitude" : -122.11,
@@ -1854,7 +1854,7 @@
       "properties" : {
         "FID" : 92,
         "volcanoNam" : "Craters of the Moon",
-        "country" : "USA",
+        "country" : "United States",
         "type" : "Volcanic Field",
         "latitude" : 43.420000000000002,
         "longitude" : -113.5,
@@ -1974,7 +1974,7 @@
       "properties" : {
         "FID" : 98,
         "volcanoNam" : "Devils Garden",
-        "country" : "USA",
+        "country" : "United States",
         "type" : "Volcanic Field",
         "latitude" : 43.5,
         "longitude" : -120.90000000000001,
@@ -1994,7 +1994,7 @@
       "properties" : {
         "FID" : 99,
         "volcanoNam" : "Devils Tower",
-        "country" : "USA",
+        "country" : "United States",
         "type" : "Plug",
         "latitude" : 44.600000000000001,
         "longitude" : -104.7,
@@ -2014,7 +2014,7 @@
       "properties" : {
         "FID" : 100,
         "volcanoNam" : "Diamond Craters",
-        "country" : "USA",
+        "country" : "United States",
         "type" : "Volcanic Field",
         "latitude" : 43.100000000000001,
         "longitude" : -118.7,
@@ -2334,7 +2334,7 @@
       "properties" : {
         "FID" : 116,
         "volcanoNam" : "Fisher",
-        "country" : "USA",
+        "country" : "United States",
         "type" : "Stratovolcano",
         "latitude" : -54.630000000000003,
         "longitude" : -164.41999999999999,
@@ -2374,7 +2374,7 @@
       "properties" : {
         "FID" : 118,
         "volcanoNam" : "Fort Rock",
-        "country" : "USA",
+        "country" : "United States",
         "type" : "Maar",
         "latitude" : 43.369999999999997,
         "longitude" : -121.06999999999999,
@@ -2394,7 +2394,7 @@
       "properties" : {
         "FID" : 119,
         "volcanoNam" : "Frosty Peak",
-        "country" : "USA",
+        "country" : "United States",
         "type" : "Stratovolcano",
         "latitude" : 55.079999999999998,
         "longitude" : -162.81,
@@ -2614,7 +2614,7 @@
       "properties" : {
         "FID" : 130,
         "volcanoNam" : "Gareloi",
-        "country" : "USA",
+        "country" : "United States",
         "type" : "Stratovolcano",
         "latitude" : 51.799999999999997,
         "longitude" : 178.80000000000001,
@@ -2674,7 +2674,7 @@
       "properties" : {
         "FID" : 133,
         "volcanoNam" : "Glacier Peak",
-        "country" : "USA",
+        "country" : "United States",
         "type" : "Stratovolcano",
         "latitude" : 48.109999999999999,
         "longitude" : -121.11,
@@ -2754,7 +2754,7 @@
       "properties" : {
         "FID" : 137,
         "volcanoNam" : "Great Sitkin",
-        "country" : "USA",
+        "country" : "United States",
         "type" : "Stratovolcano",
         "latitude" : 52.07,
         "longitude" : -176.13,
@@ -2774,7 +2774,7 @@
       "properties" : {
         "FID" : 138,
         "volcanoNam" : "Griggs",
-        "country" : "USA",
+        "country" : "United States",
         "type" : "Stratovolcano",
         "latitude" : 58.350000000000001,
         "longitude" : -155.09,
@@ -2854,7 +2854,7 @@
       "properties" : {
         "FID" : 142,
         "volcanoNam" : "Guguan",
-        "country" : "USA",
+        "country" : "United States",
         "type" : "Stratovolcano",
         "latitude" : 17.309999999999999,
         "longitude" : 145.84,
@@ -2954,7 +2954,7 @@
       "properties" : {
         "FID" : 147,
         "volcanoNam" : "Hood",
-        "country" : "USA",
+        "country" : "United States",
         "type" : "Stratovolcano",
         "latitude" : 45.399999999999999,
         "longitude" : -121.7,
@@ -2974,7 +2974,7 @@
       "properties" : {
         "FID" : 148,
         "volcanoNam" : "Hualalai",
-        "country" : "USA",
+        "country" : "United States",
         "type" : "Shield",
         "latitude" : 19.690000000000001,
         "longitude" : -155.87,
@@ -3034,7 +3034,7 @@
       "properties" : {
         "FID" : 151,
         "volcanoNam" : "Iliamna",
-        "country" : "USA",
+        "country" : "United States",
         "type" : "Stratovolcano",
         "latitude" : 60.030000000000001,
         "longitude" : -153.09,
@@ -3194,7 +3194,7 @@
       "properties" : {
         "FID" : 159,
         "volcanoNam" : "Isanotski",
-        "country" : "USA",
+        "country" : "United States",
         "type" : "Stratovolcano",
         "latitude" : 54.770000000000003,
         "longitude" : -163.72,
@@ -3294,7 +3294,7 @@
       "properties" : {
         "FID" : 164,
         "volcanoNam" : "Jefferson",
-        "country" : "USA",
+        "country" : "United States",
         "type" : "Stratovolcano",
         "latitude" : 44.670000000000002,
         "longitude" : -121.8,
@@ -3314,7 +3314,7 @@
       "properties" : {
         "FID" : 165,
         "volcanoNam" : "Jordan Craters",
-        "country" : "USA",
+        "country" : "United States",
         "type" : "Volcanic Field",
         "latitude" : 43.100000000000001,
         "longitude" : -117.40000000000001,

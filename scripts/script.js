@@ -4,7 +4,7 @@ $(document).ready(function () {
         minZoom: 1,
         maxZoom: 15
     }).setView([0, 0], 2);
-
+    
     L.control.scale({
         maxwidth: 300,
         imperial: false,
@@ -28,17 +28,18 @@ $(document).ready(function () {
 
     const volcanoIcon = L.icon({
         iconUrl: './images/volcano-icon.png',
-        iconSize: [50, 50],
-        iconAnchor: [25, 45],
-        popupAnchor: [0, -40],
+        iconSize: [25, 25],
+        iconAnchor: [12.5, 23],
+        popupAnchor: [0, -20],
     });
 
     const volcano = new L.GeoJSON.AJAX([volcanoGeoJSON], {
         pointToLayer: function (geoJsonPoint, latlng) {
+            let content = geoJsonPoint.properties;
             return L.marker(latlng, {
                 icon: volcanoIcon,
                 tooltip: {
-                    html: geoJsonPoint.properties.volcanoNam
+                    html: `<span class="toolTip">${content.volcanoNam}, ${content.country}</span>`
                 }
             });
         },
