@@ -4,7 +4,7 @@ $(document).ready(function () {
         minZoom: 1,
         maxZoom: 15
     }).setView([0, 0], 2);
-    
+
     L.control.scale({
         maxwidth: 300,
         imperial: false,
@@ -21,7 +21,8 @@ $(document).ready(function () {
     }).addTo(map);
 
     const esriImagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-        attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+        attribution: `Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community | <a href="https://www.ngdc.noaa.gov/hazel/view/hazards/volcano/loc-data" target="_blank">National Centers for
+        Environmental Information</a>`
     }).addTo(map);
 
     const volcanoGeoJSON = './json/volcano.geojson';
@@ -39,7 +40,7 @@ $(document).ready(function () {
             return L.marker(latlng, {
                 icon: volcanoIcon,
                 tooltip: {
-                    html: `<span class="toolTip">${content.volcanoNam}, ${content.country}</span>`
+                    html: `<span class="toolTip">${content.Volcano_Na}, ${content.Country}</span>`
                 }
             });
         },
@@ -63,23 +64,35 @@ $(document).ready(function () {
             for (key in f.properties) {
                 let alias;
                 switch (key) {
-                    case 'volcanoNam':
-                        alias = 'Название вулкана';
+                    case 'Number':
+                        alias = 'Номер';
                         break;
-                    case 'country':
+                    case 'Volcano_Na':
+                        alias = 'Название';
+                        break;
+                    case 'Country':
                         alias = 'Страна';
                         break;
-                    case 'type':
-                        alias = 'Тип вулкана';
+                    case 'Location':
+                        alias = 'Расположение';
                         break;
-                    case 'latitude':
-                        alias = 'Широта';
+                    case 'Type':
+                        alias = 'Тип';
                         break;
-                    case 'longitude':
-                        alias = 'Долгота';
+                    case 'Latitude':
+                        alias = 'Широта (дес.гр.)';
                         break;
-                    case 'elevation':
+                    case 'Longitude':
+                        alias = 'Долгота (дес.гр.)';
+                        break;
+                    case 'Elevation':
                         alias = 'Высота (м)';
+                        break;
+                    case 'Status':
+                        alias = 'Статус';
+                        break;
+                    case 'Last_Known':
+                        alias = 'Последнее извержение';
                         break;
                 };
                 if (key != 'FID') {
