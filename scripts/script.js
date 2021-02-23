@@ -4,7 +4,7 @@ $(document).ready(function () {
     const map = L.map('map', {
         minZoom: 1, // Минимальный Zoom
         maxZoom: 15 // Максимальный Zoom
-    }).setView([0, 0], 2); // Цетр карты при загрузке и 2 уровень
+    }).setView([0, 0], 2); // Центр карты при загрузке и 2 уровень
 
     // Масштабная линейка
     L.control.scale({
@@ -64,8 +64,6 @@ $(document).ready(function () {
             onEachFeature: markerPopup, // PopUp с информацией
             //filter: markerFilter
         }).addTo(map);
-
-        // console.log(volcano);
 
         // Клик по маркеру
         volcano.on('click', function (e) {
