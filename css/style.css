@@ -17,12 +17,12 @@ body {
 }
 
 .popupCustom {
-    max-width: 300px;
+    max-width: 350px;
     padding: 10px;
     box-sizing: border-box;
     font-family: roboto, sans-serif;
     font-weight: 400;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
 }
 
 .leaflet-popup-content-wrapper, .leaflet-popup-tip {
@@ -40,14 +40,44 @@ body {
     color: #F12F0A;
 }
 
-.leaflet-tooltip {
+.leaflet-touch .leaflet-control-zoom-in,
+.leaflet-touch .leaflet-control-zoom-out {
+    background-color: #FCF2C1;
+}
+
+.leaflet-touch .leaflet-control-zoom-in:hover,
+.leaflet-touch .leaflet-control-zoom-out:hover {
+    background-color: #F9B341;
+}
+
+.leaflet-control-coordinates {
+    font-family: roboto, sans-serif;
+    font-weight: 400;
+    font-size: 0.85rem;
+    background-color: #FCF2C1;
+    border: 1px solid #888888;
+}
+
+.leaflet-control-coordinates:hover {
+    background-color: #F9B341;
+}
+
+.leaflet-tooltip-container {
     display: block;
     font-family: roboto, sans-serif;
     font-weight: 400;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     text-align: center;
     border: none;
     border-radius: 3px;
-    box-shadow: 2px 2px 7px #030303;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.7);
     background-color: #FCF2C1;
+}
+
+.leaflet-tooltip-bottom:before {
+    border-bottom-color: #FCF2C1;
+}
+
+.leaflet-tooltip-top:before {
+    border-top-color: #FCF2C1;
 }
