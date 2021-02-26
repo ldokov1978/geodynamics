@@ -68,11 +68,9 @@ $(document).ready(function () {
         // Клик по маркеру
         volcano.on('click', function (e) {
             map.setView([e.latlng.lat, e.latlng.lng], 10);
-            setTimeout(function () {
-                $('.leaflet-popup-close-button').on('click', () => {
-                    map.setView([0, 0], 2);
-                });
-            }, 50);
+            $('.leaflet-popup-close-button').on('click', () => {
+                map.setView([0, 0], 2);
+            });
         });
 
         //Функция вывода данных PopUp
